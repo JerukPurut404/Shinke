@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -8,6 +9,8 @@ public class NativeNav : MonoBehaviour
 {
     private NavMeshAgent agent;
     Vector3 wanderTarget = Vector3.zero;
+
+    
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -19,7 +22,8 @@ public class NativeNav : MonoBehaviour
     }
     void Update()
     {
-        wander();
+        
+        StartCoroutine(waitForWander());
     }
 
     void wander()
@@ -38,5 +42,12 @@ public class NativeNav : MonoBehaviour
 
         seek(targetWorld);
 
+    }
+
+    IEnumerator waitForWander()
+    {
+        yield return new WaitForSeconds(5);
+        wander();
+              
     }
 }
