@@ -9,18 +9,23 @@ public class NativeAnim : MonoBehaviour
     public Animator animator;
     public NavMeshAgent agent;
 
+    private Transform playerTransform;
+    public float detectionRadius = 5f;
+    private bool isPlayerClose = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-       agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
     {
         
-       float speed = agent.velocity.magnitude;
+        float speed = agent.velocity.magnitude;
 
-       
+
         if (speed >= 0.3)
         {
             animator.SetBool("Walk", true);
@@ -30,7 +35,18 @@ public class NativeAnim : MonoBehaviour
             animator.SetBool("Walk", false);
         }
 
-       
+        float distanceToPlayer = Vector3.Distance(playerTransform.position, transform.position);
+        if (distanceToPlayer <= detectionRadius && !isPlayerClose)
+        {
 
+            isPlayerClose = true;
+            animator.SetBool("Dance", true);
+        }
+        else if (distanceToPlayer > detectionRadius && isPlayerClose)
+        {
+
+            isPlayerClose = false;
+
+        }
     }
 }
