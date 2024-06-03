@@ -3,15 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - destroyable
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - interact
   - Water
   - UI
-  - 
+  - interact
   - 
   - 
   - 
@@ -40,4 +41,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: destroy
+    uniqueID: 1327451381
     locked: 0
