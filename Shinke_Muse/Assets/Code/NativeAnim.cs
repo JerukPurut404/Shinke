@@ -7,7 +7,7 @@ public class NativeAnim : MonoBehaviour
     public Animator animator;
     public NavMeshAgent agent;
     public GameObject Lenaap;
-    
+
 
     private Transform playerTransform;
     public float detectionRadius = 5f;
@@ -22,20 +22,20 @@ public class NativeAnim : MonoBehaviour
 
     void Update()
     {
-        
+
         float speed = agent.velocity.magnitude;
 
 
         if (speed >= 0.3)
         {
             animator.SetBool("Walk", true);
-          
+
         }
-        
+
         else if (isPlayerClose = false && speed <= 0.2)
         {
             animator.SetBool("Idle", true);
-           
+
         }
 
         float distanceToPlayer = Vector3.Distance(playerTransform.position, transform.position);
@@ -45,7 +45,7 @@ public class NativeAnim : MonoBehaviour
             isPlayerClose = true;
             Lenaap.transform.LookAt(playerTransform.position);
             animator.SetBool("Wave", true);
-            
+
         }
         else if (distanceToPlayer > detectionRadius && isPlayerClose)
         {
