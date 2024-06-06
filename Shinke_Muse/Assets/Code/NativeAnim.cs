@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -8,6 +6,8 @@ public class NativeAnim : MonoBehaviour
     public Rigidbody rb;
     public Animator animator;
     public NavMeshAgent agent;
+    public GameObject Lenaap;
+    
 
     private Transform playerTransform;
     public float detectionRadius = 5f;
@@ -29,18 +29,23 @@ public class NativeAnim : MonoBehaviour
         if (speed >= 0.3)
         {
             animator.SetBool("Walk", true);
+          
         }
-        else
+        
+        else if (isPlayerClose = false && speed <= 0.2)
         {
-            animator.SetBool("Walk", false);
+            animator.SetBool("Idle", true);
+           
         }
 
         float distanceToPlayer = Vector3.Distance(playerTransform.position, transform.position);
         if (distanceToPlayer <= detectionRadius && !isPlayerClose)
         {
-
+            agent.speed = 0;
             isPlayerClose = true;
-            animator.SetBool("Dance", true);
+            Lenaap.transform.LookAt(playerTransform.position);
+            animator.SetBool("Wave", true);
+            
         }
         else if (distanceToPlayer > detectionRadius && isPlayerClose)
         {
