@@ -1,9 +1,27 @@
 .info-container{
-    min-height: calc(100vh - 80px - 40px);
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     padding: 40px;
+}
+
+.info-wrapper{
+    width: 800px;
+    display: flex;
+    justify-self: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.info-h2{
+    font-size: 40px;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+.info-p{
+    font-size: 20px;
+    margin-bottom: 40px;
 }

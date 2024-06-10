@@ -56,7 +56,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                The Lenape
+                The Exhibition
               </Link>
             </li>
 
