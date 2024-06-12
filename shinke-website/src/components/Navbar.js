@@ -28,10 +28,13 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <img className='navbar-img' src='images/tree2.png' alt='tree'></img>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            SHINKE
-          </Link>
+          <div className='navbar-logo'>
+            <img className='navbar-img' src='images/tree2.png' alt='tree'></img>
+            <Link to='/' className='logo-text' onClick={closeMobileMenu}>
+              SHINKE
+            </Link>
+          </div>
+          
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
