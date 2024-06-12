@@ -19,7 +19,7 @@ export default function Game() {
           <p className='info-p'>The game is made for a school project. 
                 The studies Game Artist, Game Developer and 
                 Software Developer from Mediacollege Amsterdam collaborated with 
-                the Amsterdam Museum for their Lenape exhibition.</p>
+                the Amsterdam Museum for their The Lenape exhibition.</p>
         </div>
         <div className='button-section'>
           <Download buttonStyle='btn--outline'>DOWNLOAD</Download>

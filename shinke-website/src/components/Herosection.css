@@ -18,13 +18,13 @@
     object-fit: contain;
   }
   
-  .hero-container > h2 {
+  .hero-h2 {
     color: #fff;
     font-size: 100px;
     margin-top: -100px;
   }
   
-  .hero-container > p {
+  .hero-p {
     margin-top: 8px;
     color: #fff;
     font-size: 32px;
@@ -52,13 +52,13 @@
   }
   
   @media screen and (max-width: 768px) {
-    .hero-container > h1 {
+    .hero-h2 {
       font-size: 50px;
       margin-top: -100px;
     }
   
-    .hero-container > p {
-      font-size: 30px;
+    .hero-p {
+      font-size: 20px;
     }
   
     .btn-mobile {

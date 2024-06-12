@@ -8,7 +8,7 @@
 }
 
 .info-wrapper{
-    width: 800px;
+    width: 80%;
     display: flex;
     justify-self: center;
     align-items: flex-start;
@@ -45,4 +45,11 @@
 
 .info-a:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .info-p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
 }
