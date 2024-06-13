@@ -5,7 +5,7 @@ public class Interact : MonoBehaviour
     RaycastHit hit;
     Outline outline;
     [SerializeField] private float interactDistance;
-    public LayerMask interactable;
+    public LayerMask interactable; 
 
     // Update is called once per frame
     void Update()
