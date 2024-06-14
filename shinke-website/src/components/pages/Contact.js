@@ -20,6 +20,10 @@ export default function Contact() {
                 <a className='contact-a' href='https://www.amsterdammuseum.nl/'>Website Amsterdam Museum</a>
               </div>
               <div className='contact-wrapper'>
+                <h3 className='contact-h3'>Opening Hours</h3>
+                <p className='contact-p'>Opened daily from 10.00 till 17.00</p>
+              </div>
+              <div className='contact-wrapper'>
                 <h2 className='contact-h2'>Want to collaberate with Mediacollege Amsterdam?</h2>
                 <h3 className='contact-h3'>Mediacollege Amsterdam MBO</h3>
                 <p className='contact-p'>Contactweg 36</p>

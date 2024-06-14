@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    height: calc(100vh - 40px - 80px);
+    height: 100vh;
 }
 
 .contact-wrapper{

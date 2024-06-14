@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import lowpolylogo from '../assets/images/lowpolylogo.png';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -29,7 +30,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <div className='navbar-logo'>
-            <img className='navbar-img' src='images/tree2.png' alt='tree'></img>
+            <img className='navbar-img' src={lowpolylogo} alt='tree'></img>
             <Link to='/' className='logo-text' onClick={closeMobileMenu}>
               SHINKE
             </Link>
