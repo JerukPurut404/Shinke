@@ -60,6 +60,9 @@
   .nav-item {
     height: 80px;
   }
+  .nav-item:hover{
+    border-bottom: 5px solid rgb(255, 255, 241);
+  }
   
   .nav-links {
     color: #fff;
@@ -121,7 +124,7 @@
     }
   
     .nav-links:hover {
-      background-color: #fff;
+      background-color: rgb(255, 255, 241);
       color: #242424;
       border-radius: 0;
     }
