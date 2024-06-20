@@ -1,9 +1,6 @@
 using System;
 using TMPro;
 using UnityEngine;
-using System.Collections;
-using System.Data.Sql;
-using System.Data.SqlClient;
 
 public class StopWatch : MonoBehaviour
 {
