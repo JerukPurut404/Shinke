@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 import { Download } from '../Download.js';
 import './Infosection.css';
-import trees from '../../assets/images/lowpolytree.jpg';
+import trees from '../../assets/images/gamescreenshot.png';
 import vidplaceholder from '../../assets/images/placeholder.mp4';
 import picplaceholder1 from '../../assets/images/placeholder1.png';
 import vidlenape from '../../assets/images/lenape.mp4';
