@@ -1,2 +1,0 @@
-# Shinke
-A survival game
