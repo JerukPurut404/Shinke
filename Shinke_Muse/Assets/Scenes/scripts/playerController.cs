@@ -29,6 +29,7 @@ public class playerController : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        
 
     }
 
@@ -56,6 +57,8 @@ public class playerController : MonoBehaviour
 
         rb.AddForce(velocityChange, ForceMode.VelocityChange);
     }
+
+    
 
     private void LateUpdate()
     {
