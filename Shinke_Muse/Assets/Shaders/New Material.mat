@@ -111,12 +111,13 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _WaveSpeed: 0.1
+    - _WaveSpeed: 0.03
+    - _Wavestrengt: 0.12
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _rippleSlim: 4.29
-    - _rippledense: 2.53
-    - _ripplespeed: 0.28
+    - _rippleSlim: 36.74
+    - _rippledense: 77.04
+    - _ripplespeed: 13.57
     - _spotamouth: 100
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
